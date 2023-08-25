@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main styling */
+html,body{
+  /* background: #faf4d3; */
+  background: #e0effc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.9em;
+}
+h1,h2{
+  padding-bottom: 20px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+/* utility classes */
+.container{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 15px;
+}
+/* main-page */
+#main-page{
+  /* background: #edf3f3; */
+  background: rgb(248, 248, 248);
+  /* background: #e6e7e7; */
+}
+/* header */
+#header{
+  text-align: center;
+  overflow: auto;
+  background: #e6ebea;
+  /* background: #faf4d3; */
+  color: #eb7965;
+  font-family: 'Dancing Script', cursive;
+}
+#header .logo{
+  display: block;
+  float: left;
+  /* min-height: 20px; */
+  padding-top: 10px;
+  padding-left: 242px;
+}
+#header .logo img{
+  width: 140px;
+}
+#header .name{
+  float: right;
+  padding-right: 370px;
+  padding-top: 35px;
+}
+#header h1{
+  font-size: 60px;
+}
+#header h2{
+  font-size: 30px;
+  color: #000;
+}
+.main-page-heading{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+.main-page-heading h1{
+  /* font-family: 'Syncopate', sans-serif; */
+  color: #e0effc;
+  /* font-weight: bold; */
+  font-size: 1.2em;
+}
+.main-page-heading h2{
+  /* font-family: 'Ephesis', cursive; */
+  color: #964c10;
+  font-size: 1.2em;
+}
+
+/* navigation bar styling */
+#navbar{
+  background: #b7b9b9;
+  color: #000;
+  overflow: auto;
+  /* margin: 15px 0px; */
+  margin-bottom: 0px;
+}
+#navbar .nav{
+  margin: auto;
+  max-width: 2000px;
+  overflow: auto;
+  padding-left:35px;
+}
+#navbar a{
+  color: #000;
+}
+#navbar ul{
+  list-style: none;
+  display: block;
+}
+#navbar ul li{
+  float: left;
+}
+#navbar ul li a{
+  display: block;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 20px;
+}
+#navbar ul li a:hover{
+  /* background: #4ea194; */
+  background: #eb7965;
+  color:#fff;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  padding: 10px;
+  max-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  background:#b7b9b9;
+  color: fff;
+  z-index: 1;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.dropdown{
+  padding: 0%;
+  overflow: hidden;
+  float: left;
+}
+
+.dropdown ul{
+  padding: 0px;
+}
+.dropdown ul li{
+  display: block;
+  width: 170px;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #eb7965 !important;
+  /* background-color: #4ea194 !important; */
+  color: #fff !important;
+}
+
+.dropdown #dropbtn { 
+  margin: 0;
+  outline: none;
+  border: none; 
+}
+
+.clr{
+  clear:both;
+}
+
+input{
+  padding: 10px 20px;
+  width: 230px;
+  align-self: center;
+  border-radius: 50px;
+  background:#fff;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 5px;
+  margin-right: 25px;
+  border:none;
+  font-size: 16px;
+  outline: none;
+}
+
+#profile, #wishlist, #cart{
+  padding:13px 40px;
+}
+#wishlist .fa-heart{
+  color: #000;
+}
+#wishlist :hover{
+  color: #fff !important;
+}
+/* &#8377 */
+
+.flex-container{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex:1;
+  overflow:auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#searchbar{
+  margin-left:35px;
+  margin-right: 0px;
+}
+
+button{
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover{
+  background: rgb(224, 222, 222);
+}
+
+#part-3{
+  margin: 0px 0px;
+  background: #c5c7c7;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#part-4{
+  margin: auto;
+  background: #8e9191;
+  /* padding-bottom: 40px; */
+}
+
+#subscribe h2,#about h2{
+   color: #eb7965;
+   font-size: 30px;
+   padding-bottom: 10px;
+   padding-top: 50px;
+}
+
+#subscribe p{
+  font-size: 18px;
+}
+#subscribe input{
+  color: #000;width: 265px; 
+  background: #fff;
+  border-radius: 5px;
+}
+#subscribe button{
+  color: #fff;
+  background: #eb7965;
+  padding: 7.5px 20px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 0px;
+}
+
+#subscribe button:hover{
+  background: #e26d59;
+  /* color: #000; */
+}
+#contact a{
+  text-decoration: none;
+  font-size: 17px;
+}
+#contact a:hover{
+  color: #000;
+}
+
+#contact{
+  padding-top: 50px;
+  /* margin-left: 20px; */
+}
+
+#about{
+  width: 400px;
+  text-align: justify;
+}
+
+#about p{
+  line-height: 1.4em;
+}
+
+#part-4 p{
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0px;
+}
+/* kitchen styling */
+
+.mainkit{
+  text-align: center;
+  padding: 0.25rem;
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bolder;
+}
+.subkit{
+  color: #e76049;
+  font-weight: 7000 bolder;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2rem;
+  border-bottom: #666 solid 0.15px;
+}
+.fa-heart-o {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+#kitchen-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 4rem;
+}
+.kit{
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+  flex: 1;
+}
+.kitimg{
+  margin: 0.25rem 3rem;
+  width: 17.5%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.kitimg p{
+  display: block;
+  padding-top: 210px;
+  padding-bottom: 20px;
+  /* text-align: center; */
+  line-height: 2rem;
+}
+.wish{
+  float: right;
+}
+
+.price{
+  color: rgb(240, 81, 81);
+  font-size: 1.1rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn{
+  position: relative;
+  top: 165px;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  /* line-height: 0; */
+  font-size: 0.8rem;
+  margin-bottom: -10px !important;
+  padding: 0rem;
+  padding-top: 0.3rem;
+  /* padding-top: 5px; */
+  /* padding: 0.25rem 0.75rem;
+  background: #999;
+  color: #000; */
+  background: #eb7965;
+  color: #000;
+  overflow: auto;
+  display: none;
+}
+.btn:hover{
+  background: #e76049;
+  color: #fff;
+}
+.kitimg:hover .btn{
+  display: block;
+}
+
+.kitimg:hover p{
+  padding-top: 185px;
+}
+
+.i1{
+  background: url('https://cdn.shopify.com/s/files/1/1671/4363/products/Brown_WhiteCoaster-Setof4_HD3_600x.jpg?v=1607347405')no-repeat center center/cover;
+  height: 200px;
+}
+.i2{
+  background: url('https://sslimages.shoppersstop.com/sys-master/images/h7f/hba/15713821425694/202430292_OFF_WHITE.jpg_1088Wx1632H')no-repeat center center/cover;
+  height: 200px;
+}
+.i3{
+  background: url('https://sslimages.shoppersstop.com/sys-master/images/h15/h43/16410527662110/FA0841SWETA2449_BLACK.jpg_1088Wx1632H')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i4{
+  background: url('https://i.pinimg.com/564x/ad/88/e4/ad88e43c35473c7a12f6983e30e18ff9.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i4{
+  background: url('https://i.pinimg.com/564x/43/1c/df/431cdfc79829b725fd0827fce95afdf1.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i5{
+  background: url('https://i.pinimg.com/564x/67/5e/f4/675ef4e5ad011c1afc486a4bc8f2eae2.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i6{
+  background: url('https://moreto.in/wp-content/uploads/2021/10/M21nsa17233_Px-768x768.png')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i7{
+  background: url('https://moreto.in/wp-content/uploads/2021/10/DSC09380_7689d822-47e6-4867-8fef-e3e34c8b329c-768x768.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i8{
+  background: url('https://moreto.in/wp-content/uploads/2021/10/M21NSA0118_3e8c7f32-7cdb-45c6-98dd-8e0fd047e81a.png')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i9{
+  background: url('https://cdn.shopify.com/s/files/1/2690/0106/products/174_da195737-1408-487b-b5be-b4fd54e08871_700x.png?v=1611895790')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i10{
+  background: url('https://cdn.shopify.com/s/files/1/2690/0106/products/IMG_3177_700x.jpg?v=1633067252')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i11{
+  background: url('https://i.pinimg.com/564x/f2/73/8d/f2738dbb5264c6d27b9f23f8ac969e48.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i12{
+  background: url('https://i.pinimg.com/564x/c1/09/d6/c109d601bab5d1f8a87b678a841b74a1.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i13{
+  background: url('https://i.pinimg.com/564x/8b/c3/d2/8bc3d2bb32caa0a06c490035e9c1b7b5.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i14{
+  background: url('https://i.pinimg.com/564x/34/0d/8f/340d8f0fbfb5faa64b077918a8acbaf0.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i15{
+  background: url('https://i.pinimg.com/564x/76/72/97/76729720fcc20e9e3eea7e0b8e985bf4.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i16{
+  background: url('https://i.pinimg.com/564x/43/79/8e/43798e10fe1a9bce5ec3448def2dc878.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/*cutlery*/
+.i17{
+  background: url('https://i.pinimg.com/236x/63/68/dd/6368dd969e40ec73bc24dd97bef2297d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i18{
+  background: url('https://i.pinimg.com/236x/4a/b8/8a/4ab88a68dfde74af19dcd161888723ac.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i19{
+  background: url('https://i.pinimg.com/236x/dd/c1/c0/ddc1c05483832932705523d505316ef4.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i20{
+  background: url('https://i.pinimg.com/236x/ea/0a/59/ea0a59f197cb90fef25483fdf47bd097.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i21{
+  background: url('https://i.pinimg.com/236x/ca/00/f2/ca00f225e84b1bd7628a1f37fe414b82.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i22{
+  background: url('https://i.pinimg.com/236x/1f/91/74/1f91740b9a5a2a30110b0b8e1350fdd3.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i23{
+  background: url('https://i.pinimg.com/236x/70/eb/3e/70eb3e5f3b2bbb8a0737ca897027ddc4.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i24{
+  background: url('https://i.pinimg.com/236x/04/19/a3/0419a3e8be6708c675b3a2d94773f9e9.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i25{
+  background: url('https://i.pinimg.com/564x/da/7c/a9/da7ca966121e0cbfe480835b8b8ae726.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i26{
+  background: url('https://i.pinimg.com/236x/c7/7a/63/c77a63cb967e937ff6c598b9aef42426.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i27{
+  background: url('https://i.pinimg.com/564x/f9/19/6b/f9196b34abcff9b73fa12195d00ad49d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i28{
+  background: url('https://i.pinimg.com/236x/ad/f6/52/adf652e6066c96fdfbaa6f0ad4d43fc2.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i29{
+  background: url('https://i.pinimg.com/236x/3b/e3/b6/3be3b60d437f7f67421051c9dd99d80a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i30{
+  background: url('https://i.pinimg.com/236x/cd/31/9d/cd319d83f853d680730895e202039310.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i31{
+  background: url('https://i.pinimg.com/236x/f3/31/19/f331199cb5e3123c366a58f476878421.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i32{
+  background: url('https://i.pinimg.com/236x/3d/9f/91/3d9f9194bbd317ed3922295df37b0136.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/* bowls */
+.i33{
+  background: url('https://i.pinimg.com/564x/f4/8e/c8/f48ec8cea77adeb36832d2af45ba73d8.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i34{
+  background: url('https://i.pinimg.com/236x/c5/37/d8/c537d8680adfbfec5b59f4236372b7ba.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i35{
+  background: url('https://i.pinimg.com/236x/0c/63/2e/0c632e09d5b8df9c53c9b2ee6ad94d4c.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i36{
+  background: url('https://i.pinimg.com/236x/29/23/ca/2923cac1499491aa739878eaf678cdca.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i37{
+  background: url('https://i.pinimg.com/236x/6d/18/e7/6d18e7d247be3c51f5fc5ec67d63f005.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i38{
+  background: url('https://i.pinimg.com/236x/24/50/50/245050db6761f0eb8b6319803153ab16.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i39{
+  background: url('https://i.pinimg.com/236x/ff/e5/2a/ffe52a632729d372926f240c33c5f188.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i40{
+  background: url('https://i.pinimg.com/236x/74/df/28/74df28f4f79f550147367696683aeda7.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i41{
+  background: url('https://i.pinimg.com/236x/28/63/fe/2863fef24ba255cc1a1d425ca2be4058.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i42{
+  background: url('https://i.pinimg.com/236x/c2/fa/da/c2fada3d62b8dff2473f6deec3428e2d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i43{
+  background: url('https://i.pinimg.com/236x/30/9f/ec/309fec517f145207c50db4fad9c524a2.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i44{
+  background: url('https://i.pinimg.com/236x/a4/e0/d2/a4e0d26693c2331de056adec6ba4f36d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i45{
+  background: url('https://i.pinimg.com/236x/59/d3/be/59d3be38ecc45ba44b823aa5952650a6.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i46{
+  background: url('https://i.pinimg.com/236x/bf/78/46/bf78462d93346914c4ce47aa9477e6d5.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i47{
+  background: url('https://i.pinimg.com/236x/66/53/c9/6653c9e064456abbe5831c36c3930c43.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i48{
+  background: url('https://i.pinimg.com/236x/8e/c1/fa/8ec1fadba247ca0914c67b830e6b7365.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/* plates */
+.i49{
+  background: url('https://i.pinimg.com/236x/de/07/2c/de072c37fd93ccd46383fba8f3f87425.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i50{
+  background: url('https://i.pinimg.com/236x/70/d1/c3/70d1c388ddfc76da03f0e19c39288651.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i51{
+  background: url('https://i.pinimg.com/236x/11/b3/24/11b3241ae4140e7ee01b4af0e8fe8971.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i52{
+  background: url('https://i.pinimg.com/236x/fb/e4/d7/fbe4d7991227d209069c8f62e1042b26.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i53{
+  background: url('https://i.pinimg.com/236x/2c/20/6d/2c206d4be9641f3839942735ecb327f0.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i54{
+  background: url('https://i.pinimg.com/236x/6b/df/b9/6bdfb9a7412c49748ed2d4b68b05152f.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i55{
+  background: url('https://i.pinimg.com/236x/87/03/50/8703504d337e21934b14aeb7d78643d3.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i56{
+  background: url('https://i.pinimg.com/236x/70/9e/23/709e2389e23df165d96109007340c95e.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i57{
+  background: url('https://i.pinimg.com/236x/19/93/f0/1993f0e2358d4dd6e3db697866c51b0e.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i58{
+  background: url('https://i.pinimg.com/236x/08/ae/85/08ae85f0f406abed061ba7e19651a55d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i59{
+  background: url('https://i.pinimg.com/236x/12/06/a8/1206a860c3c57b320e587cae261a0c3a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i60{
+  background: url('https://i.pinimg.com/236x/a8/30/06/a830069b3afe0b5e4da09c80dcef0b65.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i61{
+  background: url('https://i.pinimg.com/236x/fc/ba/f1/fcbaf1456c852c8dce07278520c707ea.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i62{
+  background: url('https://i.pinimg.com/236x/36/9c/da/369cdad279d0e954409d09f600b6f866.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i63{
+  background: url('https://i.pinimg.com/236x/2a/a8/48/2aa848f077edbad985b1055cd40886eb.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i64{
+  background: url('https://i.pinimg.com/236x/61/07/4c/61074c44dc02151e3364ecc98981ba11.jpg')no-repeat center center/cover;
+  height: 200px;
+}

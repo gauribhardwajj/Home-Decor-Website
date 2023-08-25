@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main styling */
+html,body{
+  /* background: #faf4d3; */
+  background: #e0effc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.9em;
+}
+h1,h2{
+  padding-bottom: 20px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+/* utility classes */
+.container{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 15px;
+}
+/* main-page */
+#main-page{
+  /* background: #edf3f3; */
+  background: rgb(248, 248, 248);
+  /* background: #e6e7e7; */
+}
+/* header */
+#header{
+  text-align: center;
+  overflow: auto;
+  background: #e6ebea;
+  /* background: #faf4d3; */
+  color: #eb7965;
+  font-family: 'Dancing Script', cursive;
+}
+#header .logo{
+  display: block;
+  float: left;
+  /* min-height: 20px; */
+  padding-top: 10px;
+  padding-left: 242px;
+}
+#header .logo img{
+  width: 140px;
+}
+#header .name{
+  float: right;
+  padding-right: 370px;
+  padding-top: 35px;
+}
+#header h1{
+  font-size: 60px;
+}
+#header h2{
+  font-size: 30px;
+  color: #000;
+}
+.main-page-heading{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+.main-page-heading h1{
+  /* font-family: 'Syncopate', sans-serif; */
+  color: #e0effc;
+  /* font-weight: bold; */
+  font-size: 1.2em;
+}
+.main-page-heading h2{
+  /* font-family: 'Ephesis', cursive; */
+  color: #964c10;
+  font-size: 1.2em;
+}
+
+/* navigation bar styling */
+#navbar{
+  background: #b7b9b9;
+  color: #000;
+  overflow: auto;
+  /* margin: 15px 0px; */
+  margin-bottom: 0px;
+}
+#navbar .nav{
+  margin: auto;
+  max-width: 2000px;
+  overflow: auto;
+  padding-left:35px;
+}
+#navbar a{
+  color: #000;
+}
+#navbar ul{
+  list-style: none;
+  display: block;
+}
+#navbar ul li{
+  float: left;
+}
+#navbar ul li a{
+  display: block;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 20px;
+}
+#navbar ul li a:hover{
+  /* background: #4ea194; */
+  background: #eb7965;
+  color:#fff;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  padding: 10px;
+  max-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  background:#b7b9b9;
+  color: fff;
+  z-index: 1;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.dropdown{
+  padding: 0%;
+  overflow: hidden;
+  float: left;
+}
+
+.dropdown ul{
+  padding: 0px;
+}
+.dropdown ul li{
+  display: block;
+  width: 170px;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #eb7965 !important;
+  /* background-color: #4ea194 !important; */
+  color: #fff !important;
+}
+
+.dropdown #dropbtn { 
+  margin: 0;
+  outline: none;
+  border: none; 
+}
+
+.clr{
+  clear:both;
+}
+
+input{
+  padding: 10px 20px;
+  width: 230px;
+  align-self: center;
+  border-radius: 50px;
+  background:#fff;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 5px;
+  margin-right: 25px;
+  border:none;
+  font-size: 16px;
+  outline: none;
+}
+
+#profile, #wishlist, #cart{
+  padding:13px 40px;
+}
+#wishlist .fa-heart{
+  color: #000;
+}
+#wishlist:hover{
+  color: #fff !important;
+}
+.flex-container{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex:1;
+  overflow:auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#searchbar{
+  margin-left:35px;
+  margin-right: 0px;
+}
+
+button{
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover{
+  background: rgb(224, 222, 222);
+}
+
+#part-3{
+  margin: 0px 0px;
+  background: #c5c7c7;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#part-4{
+  margin: auto;
+  background: #8e9191;
+  /* padding-bottom: 40px; */
+}
+
+#subscribe h2,#about h2{
+   color: #eb7965;
+   font-size: 30px;
+   padding-bottom: 10px;
+   padding-top: 50px;
+}
+
+#subscribe p{
+  font-size: 18px;
+}
+#subscribe input{
+  color: #000;width: 265px; 
+  background: #fff;
+  border-radius: 5px;
+}
+#subscribe button{
+  color: #fff;
+  background: #eb7965;
+  padding: 7.5px 20px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 0px;
+}
+
+#subscribe button:hover{
+  background: #e26d59;
+  /* color: #000; */
+}
+#contact a{
+  text-decoration: none;
+  font-size: 17px;
+}
+#contact a:hover{
+  color: #000;
+}
+
+#contact{
+  padding-top: 50px;
+  /* margin-left: 20px; */
+}
+
+#about{
+  width: 400px;
+  text-align: justify;
+}
+
+#about p{
+  line-height: 1.4em;
+}
+
+#part-4 p{
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0px;
+}
+/* kitchen styling */
+
+.mainkit{
+  text-align: center;
+  padding: 0.25rem;
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bolder;
+}
+.subkit{
+  color: #e76049;
+  font-weight: 7000 bolder;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2rem;
+  border-bottom: #666 solid 0.15px;
+}
+.fa-heart-o {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+#living-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 4rem;
+}
+.kit{
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+  flex: 1;
+}
+.kitimg{
+  margin: 0.25rem 3rem;
+  width: 17.5%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.kitimg p{
+  display: block;
+  padding-top: 210px;
+  padding-bottom: 20px;
+  /* text-align: center; */
+  line-height: 2rem;
+}
+.wish{
+  float: right;
+}
+
+.price{
+  color: rgb(240, 81, 81);
+  font-size: 1.1rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn{
+  position: relative;
+  top: 165px;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  /* line-height: 0; */
+  font-size: 0.8rem;
+  margin-bottom: -10px !important;
+  padding: 0rem;
+  padding-top: 0.3rem;
+  /* padding-top: 5px; */
+  /* padding: 0.25rem 0.75rem;
+  background: #999;
+  color: #000; */
+  background: #eb7965;
+  color: #000;
+  overflow: auto;
+  display: none;
+}
+.btn:hover{
+  background: #e76049;
+  color: #fff;
+}
+.kitimg:hover .btn{
+  display: block;
+}
+
+.kitimg:hover p{
+  padding-top: 185px;
+}
+/* figurings */
+.i1{
+  background: url('https://i.pinimg.com/236x/7a/43/aa/7a43aaaf8aa07a5e11c83bbf545b7893.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i2{
+  background: url('https://i.pinimg.com/236x/ee/1a/e4/ee1ae472bda7e915dd22c58f7c94bd75.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i3{
+  background: url('https://i.pinimg.com/236x/f5/09/39/f50939fadd9a52b9f3b19b0eb10a4451.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i4{
+  background: url('https://i.pinimg.com/236x/d6/58/b1/d658b15016dbe63a96a0f747338d368d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i5{
+  background: url('https://i.pinimg.com/236x/8b/02/e1/8b02e11fee5f1acda66b4cd1fefc8e8a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i6{
+  background: url('https://i.pinimg.com/236x/6c/1c/0d/6c1c0d42f46bd443c14dfe9463ce5dae.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i7{
+  background: url('https://i.pinimg.com/236x/b2/52/fb/b252fbf100509c34bb053878b67e9d71.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i8{
+  background: url('https://i.pinimg.com/236x/c8/fc/4d/c8fc4d881b723d59756db78d9bf68a69.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i9{
+  background: url('https://i.pinimg.com/236x/7a/db/07/7adb07478a30ec82edebd7111a454c01.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i10{
+  background: url('https://i.pinimg.com/236x/63/22/f8/6322f82134d1761b987f97cd91d7c7ab.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i11{
+  background: url('https://i.pinimg.com/236x/5b/31/b3/5b31b349b89e3fbec7728c55ecb9335d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i12{
+  background: url('https://i.pinimg.com/236x/e7/a1/08/e7a10837b2a8b590a5603e6fb0b0095a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+
+.i13{
+  background: url('https://i.pinimg.com/236x/cf/e5/0c/cfe50cc10eda75a8df8fa87b81db8ebc.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i14{
+  background: url('https://i.pinimg.com/236x/24/1c/7a/241c7aea4f0219e1b827e274480d4ea2.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i15{
+  background: url('https://i.pinimg.com/236x/e7/3b/8a/e73b8a28cfa822b22642029cbd085719.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i16{
+  background: url('https://i.pinimg.com/236x/11/53/dd/1153dd3b26008680038c6c9a29a6ef4a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/*lamps*/
+.i17{
+  background: url('https://i.pinimg.com/236x/d3/b1/90/d3b19069c6950b159814cb2a4d12e07b--paper-lamps-paper-lanterns.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i18{
+  background: url('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTRkWfr8gkjePn0J49My579HZLtJEVgKHugmg_Dxs1ZRu7Fjr_KoIsy17C_GRq-wnmgIIR76VW86CRppOZLun8_9W2b5Kea&usqp=CAE')no-repeat center center/cover;
+  height: 200px;
+}
+.i19{
+  background: url('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSz6dlOxrCSJY1TAXrrqn_9UH90zpIim6msq1GycgMba-awczcFCEAa5N6nfU1tGCDTc0e4OIWxTtscQhtlj0npPexDO9HXLGi0ridBRmM&usqp=CAE')no-repeat center center/cover;
+  height: 200px;
+}
+.i20{
+  background: url('https://m.media-amazon.com/images/I/91p4qy8CGmL.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i21{
+  background: url('https://i.pinimg.com/474x/45/e6/a8/45e6a8b90e5dec5ce61f25941c035ef5.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i22{
+  background: url('https://images.woodenstreet.de/image/cache/data%2Fhome-decors%2Flamps-lighting%2Ffloor-lamps%2Fcontemporary-art-white-glass-shade-with-metal-base-floor-lamp%2Ffront-408x408.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i23{
+  background: url('https://i.pinimg.com/236x/1e/0b/d4/1e0bd4ba4d7d7043e951ca1a4fe6d333.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i24{
+  background: url('https://m.media-amazon.com/images/I/81hOP7Rx0bL._SX342_.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i25{
+  background: url('https://assets-news.housing.com/news/wp-content/uploads/2016/04/23094336/How-to-choose-the-perfect-decor-lights-for-your-room-FB-1200x700-compressed.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i26{
+  background: url('https://www.ulcdn.net/images/products/348954/product/Faraday_Floor_Lamp_with_Side_Table_LP.jpeg?1624425623')no-repeat center center/cover;
+  height: 200px;
+}
+.i27{
+  background: url('https://ii1.pepperfry.com/media/catalog/product/c/r/568x625/cream-jute-floor-lamp-by-lavish-cream-jute-floor-lamp-by-lavish-rxo4ps.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i28{
+  background: url('https://m.media-amazon.com/images/I/41UwUl+E-6L.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i29{
+  background: url('https://m.media-amazon.com/images/I/71IrXECqFfL._AC_SX342_.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i30{
+  background: url('https://i.pinimg.com/originals/a9/df/9a/a9df9a6e4b0994a870977ac4562c6cee.png')no-repeat center center/cover;
+  height: 200px;
+}
+.i31{
+  background: url('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQpbJw4iE3bkCZybAeW1jQrUvXoD58h1rU_A-QWBZLy7jnAYu1fl0fcxGvSELByR-g3ze6Czv1tZVyfJiikdtLN2NeBbLAT&usqp=CAE')no-repeat center center/cover;
+  height: 200px;
+}
+.i32{
+  background: url('https://m.media-amazon.com/images/I/61BCkLjrm1L._AC_SX466_.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/* cushions */
+.i33{
+  background: url('https://i.pinimg.com/236x/af/a6/49/afa6497899d1d5eaa6fe28deb847c6e1.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i34{
+  background: url('https://i.pinimg.com/236x/9d/3f/77/9d3f77fb839c8c6a61f07502743fae78.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i35{
+  background: url('https://i.pinimg.com/236x/4f/12/95/4f1295a02b1e73639fd03c469b06120f.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i36{
+  background: url('https://i.pinimg.com/236x/f7/41/52/f741520625ad21808a3d8360f85c5d3b.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i37{
+  background: url('https://i.pinimg.com/236x/95/da/54/95da54bcc33f76d6c1fe3d98be5ff976.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i38{
+  background: url('https://i.pinimg.com/236x/8a/20/6b/8a206b14671dd49db9fad9397e5a0441.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i39{
+  background: url('https://i.pinimg.com/236x/6b/7c/b7/6b7cb7002a4ac6d35de231b457acf33c.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i40{
+  background: url('https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTrZrBPCRRXVOfM9PoEUiP4YsdlFI-jQGjeb4APtOHvaQSh-WMh6yhCUiYLQjXkiHimMvu0nhVju0DUBDG1Oy1tFOAnPZetMaDBSL1v-Kw&usqp=CAE')no-repeat center center/cover;
+  height: 200px;
+}
+.i41{
+  background: url('https://i.pinimg.com/236x/c8/58/c0/c858c0e1dc9a9e0fe30b36921702d940.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i42{
+  background: url('https://i.pinimg.com/236x/23/ea/5f/23ea5f7c00174b189f9a3d1320481b62.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i43{
+  background: url('https://i.pinimg.com/236x/66/6c/3e/666c3e8810ac26f3569d245e3d77ce18.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i44{
+  background: url('https://i.pinimg.com/236x/07/04/68/070468e85f17eba4977840beccfe895a.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i45{
+  background: url('https://i.pinimg.com/236x/2c/54/40/2c544047ba70b1cdcb5f8f09fae07f16.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i46{
+  background: url('https://i.pinimg.com/236x/43/c3/2d/43c32d7cf0d9d16383d53cf1fb7e061d.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i47{
+  background: url('https://i.pinimg.com/236x/19/03/fe/1903fec5462f02d582e1dd43347d29db.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i48{
+  background: url('https://i.pinimg.com/236x/79/f0/96/79f09653d7a2d04fc9910404f63d3483.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+/* curtains */
+.i49{
+  background: url('https://i.pinimg.com/236x/c2/21/f8/c221f8d5f84dac9dcc63a542b94a6a70.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i50{
+  background: url('https://i.pinimg.com/236x/28/40/38/2840388d86ee6d404216b25f87454242.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i51{
+  background: url('https://i.pinimg.com/236x/9b/42/ee/9b42ee1de8989d0060dd1a9023444f73.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i52{
+  background: url('https://i.pinimg.com/236x/ec/95/bd/ec95bd2a0adb3c89125fdd6dd781184e.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i53{
+  background: url('https://i.pinimg.com/236x/43/b2/75/43b275414d9d49dc2a3f8f5ee619e23e.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i54{
+  background: url('https://i.pinimg.com/236x/47/2f/f1/472ff1b40d2640c8a075138c8c449b37.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i55{
+  background: url('https://i.pinimg.com/236x/e1/39/ca/e139ca723fc35c088d8a52169aa083e0.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i56{
+  background: url('https://i.pinimg.com/236x/8d/2f/76/8d2f76eeaa69d2c88371efb5021d2a94.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i57{
+  background: url('https://i.pinimg.com/236x/09/56/eb/0956ebe2dad91f4c149f73a457df0ecc.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i58{
+  background: url('https://i.pinimg.com/236x/d8/03/ed/d803ed2a00a6d220217b2e6eecfaaa51.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i59{
+  background: url('https://i.pinimg.com/236x/55/eb/7c/55eb7c054a23791ef6a1dcc97f888e04.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i60{
+  background: url('https://i.pinimg.com/236x/10/34/9b/10349bd09539e95492afac22914366d5.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i61{
+  background: url('https://i.pinimg.com/236x/4c/5b/bf/4c5bbf97c29b8c00e1b2e9f73c8f4d8e.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i62{
+  background: url('https://i.pinimg.com/236x/a3/4c/a4/a34ca4a3c9915f37b57c0a10d472e8b7.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i63{
+  background: url('https://i.pinimg.com/236x/5e/aa/b3/5eaab30d6419dcadf0eaa370f2614184.jpg')no-repeat center center/cover;
+  height: 200px;
+}
+.i64{
+  background: url('https://i.pinimg.com/236x/11/e1/97/11e197d2b8db6cfa5822fa5f95266087.jpg')no-repeat center center/cover;
+  height: 200px;
+}
